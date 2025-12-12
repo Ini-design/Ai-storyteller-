@@ -13,7 +13,7 @@ generator = pipeline(
     "text-generation",
     model=model,
     tokenizer=tokenizer,
-    device=0 if torch.cuda.is_available() else -1
+    device=10 if torch.cuda.is_available() else -1
 )
 
 # Story generation function
